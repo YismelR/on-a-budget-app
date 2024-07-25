@@ -1,6 +1,6 @@
+import AddNewEntryButton from "./AddNewEntryButton";
 import TotalBalanceDisplay from "./TotalBalanceDisplay";
 import TransactionList from "./TransactionList";
-import plusSign from "@/assets/icons/plus.svg";
 
 import WelcomeDisplay from "./WelcomeDisplay";
 export default function Home() {
@@ -15,10 +15,8 @@ export default function Home() {
           <TransactionList />
         </main>
       </div>
-      <footer className="bg-white flex h-20 rounded-t-3xl relative">
-        <div className=" absolute bottom-8 left-40 p-3 bg-gradient-to-br from-[#243B33] to-[#7C8C7C] rounded-full">
-          <img src={plusSign} alt="plus sign" className=" size-7 " />
-        </div>
+      <footer className="bg-white flex h-20 rounded-t-3xl relative shadow-footerShadow">
+        <AddNewEntryButton />
       </footer>
     </div>
   );
