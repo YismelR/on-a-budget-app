@@ -14,7 +14,11 @@ export default function WelcomeDisplay() {
           <h1 className="font-semibold">John Doe</h1>
         </div>
       </div>
-      <img src={setting} alt="setting" className="bg-white p-2 rounded-xl" />
+      <img
+        src={setting}
+        alt="setting"
+        className="bg-white p-2 rounded-xl shadow-md"
+      />
     </>
   );
 }

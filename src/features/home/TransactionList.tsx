@@ -1,10 +1,13 @@
 import { expensesList } from "@/listOfExpenses/expensesList";
+import { NavLink } from "react-router-dom";
 export default function TransactionList() {
   return (
     <section className="grid gap-4">
       <div className="flex justify-between">
         <p className="font-semibold">Transactions</p>
-        <p className="font-medium text-[#A1B3C8]">View All</p>
+        <NavLink to="/transactions">
+          <p className="font-medium text-[#A1B3C8] cursor-pointer">View All</p>
+        </NavLink>
       </div>
       {expensesList.map((expenses, id) => {
         return (
