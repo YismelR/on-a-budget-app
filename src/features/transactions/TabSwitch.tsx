@@ -1,6 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Income from "./Income";
-import Expenses from "./Expenses";
+import IncomeDisplay from "./IncomeDisplay";
+import ExpensesDisplay from "./ExpensesDisplay";
 export default function TabSwitch() {
   return (
     <Tabs defaultValue="income" className="">
@@ -9,10 +9,10 @@ export default function TabSwitch() {
         <TabsTrigger value="expenses">Expenses</TabsTrigger>
       </TabsList>
       <TabsContent value="income">
-        <Income />
+        <IncomeDisplay />
       </TabsContent>
       <TabsContent value="expenses">
-        <Expenses />
+        <ExpensesDisplay />
       </TabsContent>
     </Tabs>
   );

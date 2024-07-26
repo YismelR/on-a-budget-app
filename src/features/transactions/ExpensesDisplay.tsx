@@ -1,6 +1,6 @@
 import { expensesList } from "@/listOfExpenses/expensesList";
 
-export default function Expenses() {
+export default function ExpensesDisplay() {
   return (
     <section className="grid gap-4">
       {expensesList.map((expenses, id) => {
