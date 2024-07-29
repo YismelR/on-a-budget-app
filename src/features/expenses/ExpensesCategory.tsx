@@ -26,24 +26,32 @@ type Status = {
 
 const statuses: Status[] = [
   {
-    value: "backlog",
-    label: "Backlog",
+    value: "Rent",
+    label: "Rent",
   },
   {
-    value: "todo",
-    label: "Todo",
+    value: "Food",
+    label: "Food",
   },
   {
-    value: "in progress",
-    label: "In Progress",
+    value: "Grocery",
+    label: "Grocery",
   },
   {
-    value: "done",
-    label: "Done",
+    value: "Phone",
+    label: "Phone",
   },
   {
-    value: "canceled",
-    label: "Canceled",
+    value: "Internet",
+    label: "Internet",
+  },
+  {
+    value: "Travel",
+    label: "Travel",
+  },
+  {
+    value: "Entertaiment",
+    label: "Entertaiment",
   },
 ];
 
@@ -59,7 +67,7 @@ export function ExpensesCategory() {
       <Popover open={open} onOpenChange={setOpen}>
         <PopoverTrigger asChild>
           <Button variant="outline" className="w-[150px] justify-start">
-            {selectedStatus ? <>{selectedStatus.label}</> : <>+ Set status</>}
+            {selectedStatus ? <>{selectedStatus.label}</> : <>Category</>}
           </Button>
         </PopoverTrigger>
         <PopoverContent className="w-[200px] p-0" align="start">
@@ -73,7 +81,7 @@ export function ExpensesCategory() {
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
         <Button variant="outline" className="w-[150px] justify-start">
-          {selectedStatus ? <>{selectedStatus.label}</> : <>+ Set status</>}
+          {selectedStatus ? <>{selectedStatus.label}</> : <>Category</>}
         </Button>
       </DrawerTrigger>
       <DrawerContent>
